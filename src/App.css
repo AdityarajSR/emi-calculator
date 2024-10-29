@@ -1,0 +1,68 @@
+.App {
+  width: 95%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-family: 'Arial', sans-serif;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.localTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.highlighted {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  color: darkblue;
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slider {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tenureContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tenure {
+  width: 18%;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(164, 164, 207);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tenure:hover {
+  background-color: rgb(120, 120, 180);
+}
+
+.selected {
+  background-color: blueviolet;
+}
