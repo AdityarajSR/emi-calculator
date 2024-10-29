@@ -20,8 +20,7 @@ function App() {
     const n = tenure; // Number of months
 
     const calcEmi =
-      (principle * rate * Math.pow(1 + rate, n)) /
-      (Math.pow(1 + rate, n) - 1);
+      (principle * rate * Math.pow(1 + rate, n)) / (Math.pow(1 + rate, n) - 1);
 
     return Number(calcEmi.toFixed(0));
   };
@@ -67,7 +66,11 @@ function App() {
       <span className="title">EMI CALCULATOR</span>
 
       <TextInput title="TOTAL COST OF ASSET" state={cost} setState={setCost} />
-      <TextInput title="INTEREST RATE (%)" state={interest} setState={setInterest} />
+      <TextInput
+        title="INTEREST RATE (%)"
+        state={interest}
+        setState={setInterest}
+      />
       <TextInput title="PROCESSING FEE (%)" state={fee} setState={setFee} />
 
       <SliderInput
